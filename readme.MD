@@ -4,4 +4,8 @@ The bot gets a list of agencies and the amount of spending from the main page. W
 
 The bot selects one of the agencies, for example, National Science Foundation. Goes to the agency page scrapes a table with all "Individual Investments" and writes it to a new sheet in excel. If the "UII" column contains a link, opens it and download PDF with Business Case (button "Download Business Case PDF").
 
-Store downloaded files and Excel sheet to the root of the output folder
+Store downloaded files and Excel sheet to the root of the output folder.
+
+Extract data from PDF. 
+
+Bot gets the data from Section A in each PDF. Then bot compares the value "Name of this Investment" with the column "Investment Title", and the value "Unique Investment Identifier (UII)" with the column "UII"
